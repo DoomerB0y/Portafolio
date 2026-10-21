@@ -1,26 +1,21 @@
 import reflex as rx
 from portafolio.data import Extra
+from portafolio.styles.styles import Size
 
-from portafolio.styles.styles import IMAGE_HEIGHT, Size
 
 def card_detail(extra: Extra) -> rx.Component:
-    card_body = rx.box(
-        rx.inset(
-            rx.image(
-                src=extra.image,
-                height=IMAGE_HEIGHT,
-                width="100%",
-                object_fit="cover"
-            ),
-            pb=Size.DEFAULT.value
-        ),
+    card_body = rx.vstack(
         rx.text.strong(extra.title),
         rx.text(
             extra.description,
             size=Size.SMALL.value,
-            color_scheme="gray"
-        )
+            color_scheme="gray",
+        ),
+        spacing=Size.SMALL.value,
+        align_items="start",
+        width="100%",
     )
+
     return rx.card(
         rx.cond(
             extra.url != "",
@@ -28,10 +23,9 @@ def card_detail(extra: Extra) -> rx.Component:
                 card_body,
                 href=extra.url,
                 is_external=True,
-                underline="hover"
+                underline="hover",
             ),
-            card_body
+            card_body,
         ),
-        width="100%"
+        width="100%",
     )
-
