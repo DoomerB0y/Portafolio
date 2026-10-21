@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 set -e
 
-echo "Instalando dependencias..."
+echo "Preparando entorno Node.js..."
+
+# Forzar la instalación de Node antes de iniciar Reflex
+node --version
+npm --version
+
+echo "Preparando entorno Python..."
+
 python3 -m venv .venv
 source .venv/bin/activate
 
@@ -12,14 +19,14 @@ echo "Inicializando Reflex..."
 reflex init --template blank
 
 echo "Exportando portafolio..."
-rm -rf public
+rm -rf public frontend.zip
 reflex export --frontend-only
 
-echo "Preparando carpeta de publicacion..."
+echo "Preparando archivos estáticos..."
 mkdir -p public
 unzip -o frontend.zip -d public
 
-echo "Verificando index.html..."
+echo "Verificando archivos..."
 test -f public/index.html
 
-echo "Compilacion completada correctamente."
+echo "¡Compilación completada!"
