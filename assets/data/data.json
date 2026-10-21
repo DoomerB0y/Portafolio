@@ -1,57 +1,96 @@
-                    )
-                ),
-                rx.hstack(
-                    rx.cond(
-                        info.url != "",
-                        icon_button(
-                            "link",
-                            info.url
-                        )
-                    ),
-                    rx.cond(
-                        info.github != "",
-                        icon_button(
-                            "github",
-                            info.github
-                        )
-                    )
-                ),
-                spacing=Size.SMALL.value,
-                width="100%"
-            ),
-            spacing=Size.DEFAULT.value,
-            width="100%"
-        ),
-        rx.cond(
-            show_image and info.image != "",
-            rx.image(
-                src=info.image,
-                height=IMAGE_HEIGHT,
-                width="auto",
-                border_radius=EmSize.DEFAULT.value,
-                object_fit="cover"
-            )
-        ),
-        rx.vstack(
-            rx.cond(
-                info.date != "",
-                rx.badge(info.date)
-            ),
-            rx.cond(
-                info.certificate != "",
-                icon_button(
-                    "shield-check",
-                    info.certificate,
-                    solid=True
-                )
-            ),
-            spacing=Size.SMALL.value,
-            align="end"
-        ),
-        flex_direction=[
-                        "column-reverse",
-                        "row"
-                    ],
-        spacing=Size.DEFAULT.value,
-        width="100%"
-    )
+{
+    "title": "David José Correa Farias | Portafolio",
+    "description": "Profesional en Ingeniería de Sistemas con experiencia en atención al cliente, soporte administrativo y coordinación operativa.",
+    "image": "/avatar.jpg",
+    "avatar": "/avatar.jpg",
+    "name": "David José Correa Farias",
+    "skill": "Ingeniero de Sistemas | Coordinación Operativa & Soporte TI",
+    "location": "Lima, Perú",
+    "media": {
+        "email": "davidcorreafarias@gmail.com",
+        "cv": "/data/cv.pdf",
+        "github": "https://github.com",
+        "likedin": "https://www.linkedin.com/in/david-correa-971046310"
+    },
+    "about": "Profesional en Ingeniería de Sistemas con sólida experiencia en atención al cliente, soporte administrativo y coordinación operativa en entornos dinámicos. Me destaco por mi organización, responsabilidad, capacidad de comunicación y orientación a resultados, así como por mi facilidad para adaptarme, aprender rápidamente y aportar soluciones tecnológicas que contribuyan al buen funcionamiento del equipo y la continuidad del negocio.",
+    "skills": [
+        {
+            "icon": "devicon-jira-plain",
+            "name": "Gestión de Tickets & SLA"
+        },
+        {
+            "icon": "devicon-trello-plain",
+            "name": "Organización de Procesos"
+        },
+        {
+            "icon": "devicon-bash-plain",
+            "name": "Mantenimiento TI"
+        }
+    ],
+    "experience": [
+        {
+            "icon": "headphones",
+            "title": "Diebold Nixdorf",
+            "subtitle": "Despachador · Lima, Perú",
+            "description": "Gestión de agendas y programación de técnicos de campo. Priorización de emergencias por nivel de urgencia y optimización de rutas. Asignación y seguimiento riguroso de tickets al personal idóneo para asegurar la continuidad del servicio.",
+            "date": "Nov. 2025 – Actualidad"
+        },
+        {
+            "icon": "clipboard-check",
+            "title": "Dinita & Co Restaurant",
+            "subtitle": "Auxiliar administrativo · Lima, Perú",
+            "description": "Apoyo administrativo y operativo integral. Control y organización de inventarios, reducción de costos mediante mejor gestión interna, uso de tecnología y análisis de datos para optimizar procesos y asegurar el orden del negocio.",
+            "date": "Feb. 2023 – Oct. 2025"
+        },
+        {
+            "icon": "laptop",
+            "title": "PDVSA",
+            "subtitle": "Pasante de operaciones en TI · Anzoátegui, Venezuela",
+            "description": "Mantenimiento preventivo y correctivo de sistemas. Resolución de tickets de soporte técnico en tiempo oportuno para garantizar la continuidad operativa y supervisión del rendimiento de la infraestructura tecnológica.",
+            "date": "Jul. 2014 – Dic. 2014"
+        }
+    ],
+    "projects": [
+        {
+            "icon": "calendar-clock",
+            "title": "Portafolio Web",
+            "description": "Desarrollo de un portafolio web personal utilizando Python y el framework Reflex, diseñado para presentar mi perfil profesional, habilidades y proyectos tecnológicos mediante una interfaz moderna y adaptable a distintos dispositivos",
+            "technologies": [
+                {
+                    "icon": "devicon-trello-plain",
+                    "name": "Logística"
+                }
+            ],
+            "image": "/project_1.jpg",
+            "url": "",
+            "github": ""
+        }
+    ],
+    "training": [
+        {
+            "icon": "graduation-cap",
+            "title": "UNEFA – Sede San Tomé",
+            "subtitle": "Ingeniería de Sistemas · Anzoátegui, Venezuela",
+            "description": "Formación universitaria enfocada en análisis de sistemas, bases de datos, redes, infraestructura informática y optimización de procesos tecnológicos.",
+            "date": "Oct. 2009 – Jul. 2017",
+            "certificate": ""
+        }
+    ],
+    "extras": [
+        {
+            "title": "Comunicación Efectiva",
+            "description": "Capacidad para expresarme con claridad, escuchar activamente y mantener una interacción profesional y respetuosa con clientes, compañeros y áreas internas.",
+            "url": ""
+        },
+        {
+            "title": "Adaptabilidad y Aprendizaje",
+            "description": "Facilidad para integrarme a distintos entornos de trabajo dinámicos, asimilar nuevos procesos y asumir retos con proactividad y responsabilidad.",
+            "url": ""
+        },
+        {
+            "title": "Afinidad y Soporte Tecnológico",
+            "description": "Manejo práctico de herramientas informáticas, soporte técnico de sistemas y uso de la tecnología para optimizar flujos de trabajo.",
+            "url": ""
+        }
+    ]
+}
