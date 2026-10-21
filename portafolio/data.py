@@ -16,21 +16,21 @@ class Technology:
 
 
 class Info:
-    def __init__(self, icon, title, subtitle, description, date="", certificate="", technologies=[], image="", url="", github=""):
+    def __init__(self, icon, title, description, subtitle="", date="", certificate="", technologies=None, image="", url="", github=""):
         self.icon = icon
         self.title = title
         self.subtitle = subtitle
         self.description = description
         self.date = date
         self.certificate = certificate
-        self.technologies = [Technology(**tech) for tech in technologies]
+        self.technologies = [Technology(**tech) for tech in (technologies or [])]
         self.image = image
         self.url = url
         self.github = github
 
 
 class Extra:
-    def __init__(self, image, title, description, url):
+    def __init__(self, title, description, url="", image=""):
         self.image = image
         self.title = title
         self.description = description
@@ -49,7 +49,7 @@ class Data:
             location,
             media,
             about,
-            technologies,
+            skills,
             experience,
             projects,
             training,
@@ -64,7 +64,8 @@ class Data:
         self.location = location
         self.media = Media(**media)
         self.about = about
-        self.technologies = [Technology(**tech) for tech in technologies]
+        self.technologies = [Technology(**tech) for tech in skills]
+        self.skills = self.technologies
         self.experience = [Info(**info) for info in experience]
         self.projects = [Info(**info) for info in projects]
         self.training = [Info(**info) for info in training]
