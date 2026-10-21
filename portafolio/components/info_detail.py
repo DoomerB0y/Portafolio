@@ -5,7 +5,7 @@ from portafolio.data import Info
 from portafolio.styles.styles import IMAGE_HEIGHT, EmSize, Size
 
 
-def info_detail(info: Info) -> rx.Component:
+def info_detail(info: Info, show_image: bool = True) -> rx.Component:
     return rx.flex(
         rx.hstack(
             icon_badge(info.icon),
@@ -55,7 +55,7 @@ def info_detail(info: Info) -> rx.Component:
             width="100%"
         ),
         rx.cond(
-            info.image != "",
+            show_image and info.image != "",
             rx.image(
                 src=info.image,
                 height=IMAGE_HEIGHT,
