@@ -13,7 +13,7 @@
         "likedin": "https://www.linkedin.com/in/david-correa-971046310"
     },
     "about": "Profesional en Ingeniería de Sistemas con sólida experiencia en atención al cliente, soporte administrativo y coordinación operativa en entornos dinámicos. Me destaco por mi organización, responsabilidad, capacidad de comunicación y orientación a resultados, así como por mi facilidad para adaptarme, aprender rápidamente y aportar soluciones tecnológicas que contribuyan al buen funcionamiento del equipo y la continuidad del negocio.",
-    "Skills": [
+    "skills": [
         {
             "icon": "devicon-jira-plain",
             "name": "Gestión de Tickets & SLA"
