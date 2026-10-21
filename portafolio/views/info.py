@@ -11,7 +11,7 @@ def info(title: str, info: list[Info]) -> rx.Component:
         heading(title),
         rx.vstack(
             *[
-                info_detail(item)
+                info_detail(item, show_image=(title == "Proyectos"))
                 for item in info
             ],
             spacing=Size.DEFAULT.value,
