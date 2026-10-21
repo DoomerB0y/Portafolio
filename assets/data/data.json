@@ -54,6 +54,7 @@
         {
             "icon": "calendar-clock",
             "title": "Portafolio Web",
+            "subtitle": "Desarrollo Web | Proyecto Personal",
             "description": "Desarrollo de un portafolio web personal utilizando Python y el framework Reflex, diseñado para presentar mi perfil profesional, habilidades y proyectos tecnológicos mediante una interfaz moderna y adaptable a distintos dispositivos",
             "technologies": [
                 {
