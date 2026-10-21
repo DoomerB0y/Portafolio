@@ -13,19 +13,7 @@
         "likedin": "https://www.linkedin.com/in/david-correa-971046310"
     },
     "about": "Profesional en Ingeniería de Sistemas con sólida experiencia en atención al cliente, soporte administrativo y coordinación operativa en entornos dinámicos. Me destaco por mi organización, responsabilidad, capacidad de comunicación y orientación a resultados, así como por mi facilidad para adaptarme, aprender rápidamente y aportar soluciones tecnológicas que contribuyan al buen funcionamiento del equipo y la continuidad del negocio.",
-    "technologies": [
-        {
-            "icon": "devicon-python-plain",
-            "name": "Python"
-        },
-        {
-            "icon": "devicon-mysql-plain",
-            "name": "Bases de Datos & SQL"
-        },
-        {
-            "icon": "devicon-linux-plain",
-            "name": "Linux & Soporte SO"
-        },
+    "Skills": [
         {
             "icon": "devicon-jira-plain",
             "name": "Gestión de Tickets & SLA"
@@ -65,39 +53,15 @@
     "projects": [
         {
             "icon": "calendar-clock",
-            "title": "Coordinación Operativa y Despacho de Campo",
-            "subtitle": "Optimización logística y resolución de incidencias",
-            "description": "Programación eficiente de personal técnico, priorización de contingencias críticas y gestión de rutas para maximizar la cobertura del servicio y el cumplimiento de SLA.",
+            "title": "Portafolio Web",
+            "description": "Desarrollo de un portafolio web personal utilizando Python y el framework Reflex, diseñado para presentar mi perfil profesional, habilidades y proyectos tecnológicos mediante una interfaz moderna y adaptable a distintos dispositivos",
             "technologies": [
-                {
-                    "icon": "devicon-jira-plain",
-                    "name": "Help Desk"
-                },
                 {
                     "icon": "devicon-trello-plain",
                     "name": "Logística"
                 }
             ],
             "image": "/project_1.jpg",
-            "url": "",
-            "github": ""
-        },
-        {
-            "icon": "bar-chart-3",
-            "title": "Control de Inventarios y Eficiencia Operativa",
-            "subtitle": "Gestión de costos y análisis de datos",
-            "description": "Supervisión sistemática de suministros, trazabilidad de existencias y reducción de mermas operativas mediante digitalización de reportes y toma de decisiones basada en datos.",
-            "technologies": [
-                {
-                    "icon": "devicon-mysql-plain",
-                    "name": "Inventarios"
-                },
-                {
-                    "icon": "devicon-python-plain",
-                    "name": "Análisis de Datos"
-                }
-            ],
-            "image": "/project_2.jpg",
             "url": "",
             "github": ""
         }
@@ -114,19 +78,16 @@
     ],
     "extras": [
         {
-            "image": "/extra_1.jpg",
             "title": "Comunicación Efectiva",
             "description": "Capacidad para expresarme con claridad, escuchar activamente y mantener una interacción profesional y respetuosa con clientes, compañeros y áreas internas.",
             "url": ""
         },
         {
-            "image": "/extra_2.jpg",
             "title": "Adaptabilidad y Aprendizaje",
             "description": "Facilidad para integrarme a distintos entornos de trabajo dinámicos, asimilar nuevos procesos y asumir retos con proactividad y responsabilidad.",
             "url": ""
         },
         {
-            "image": "/extra_3.jpg",
             "title": "Afinidad y Soporte Tecnológico",
             "description": "Manejo práctico de herramientas informáticas, soporte técnico de sistemas y uso de la tecnología para optimizar flujos de trabajo.",
             "url": ""
