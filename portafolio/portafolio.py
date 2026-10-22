@@ -7,6 +7,7 @@ from portafolio.views.footer import footer
 from portafolio.views.header import header
 from portafolio.views.info import info
 from portafolio.views.tech_stack import tech_stack
+from portafolio.components.gengar import gengar
 
 DATA = data.data
 
@@ -25,6 +26,7 @@ def index() -> rx.Component:
             extra(DATA.extras),
             rx.divider(),
             footer(DATA),
+            gengar(),
             spacing=Size.MEDIUM.value,
             padding_x=EmSize.MEDIUM.value,
             padding_y=EmSize.BIG.value,
